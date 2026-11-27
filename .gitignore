@@ -1,5 +1,10 @@
-﻿__pycache__/
+__pycache__/
 *.py[cod]
 .ipynb_checkpoints/
 .streamlit/
 *.csv
+.venv/
+venv/
+.env
+frontend/node_modules/
+frontend/dist/

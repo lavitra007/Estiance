@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+    color: #141413;
+}
+
+.block-container {
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+    max-width: 1280px;
+}
+
+/* Editorial Hero Title */
+.hero-title {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-size: 3.1rem;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: #141413;
+    margin-bottom: 0.25rem;
+}
+
+.hero-title i {
+    color: #5C5953;
+}
+
+.eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #D96B38;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+}
+
+/* Dark Pill Navbar Header */
+.top-pill-bar {
+    background: #141413;
+    color: #F5F2EC;
+    border-radius: 999px;
+    padding: 0.7rem 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.brand-mark {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    font-size: 0.85rem;
+    color: #FFFFFF;
+}
+
+.brand-sub {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    color: #A8A39B;
+    margin-left: 0.75rem;
+}
+
+/* White Editorial Cards */
+.metric-card {
+    background: #FFFFFF;
+    border: 1px solid #E8E3D9;
+    border-radius: 16px;
+    padding: 1.1rem 1.25rem;
+    box-shadow: 0 2px 10px rgba(20, 20, 19, 0.03);
+    height: 100%;
+}
+
+.metric-card-dark {
+    background: #141413;
+    color: #F5F2EC;
+    border-radius: 16px;
+    padding: 1.1rem 1.25rem;
+    height: 100%;
+}
+
+.card-kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #7A756C;
+    margin-bottom: 0.4rem;
+}
+
+.card-value {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.05rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: #141413;
+    line-height: 1.1;
+}
+
+.card-value-dark {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.05rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    line-height: 1.1;
+}
+
+.card-sub {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    color: #7A756C;
+    margin-top: 0.45rem;
+}
+
+/* Comp Listing Card */
+.comp-card {
+    background: #FFFFFF;
+    border: 1px solid #E8E3D9;
+    border-radius: 16px;
+    padding: 1rem 1.15rem;
+    margin-bottom: 0.85rem;
+}
+
+.comp-badge {
+    display: inline-block;
+    background: #141413;
+    color: #FFFFFF;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    margin-bottom: 0.45rem;
+}
+
+.comp-title {
+    font-weight: 600;
+    font-size: 0.98rem;
+    color: #141413;
+    margin-bottom: 0.2rem;
+}
+
+.comp-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    color: #6B675E;
+}
+
+/* Footer Proof Bar */
+.footer-bar {
+    background: #141413;
+    color: #F5F2EC;
+    border-radius: 16px;
+    padding: 1.15rem 1.5rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

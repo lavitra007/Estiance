@@ -1,0 +1,178 @@
+{
+  "model_name": "CatBoost",
+  "target_transform": "log1p(price)",
+  "feature_count": 29,
+  "cv_folds": 5,
+  "cv_log_rmse": 383.26,
+  "holdout_r2": 0.7773,
+  "holdout_mae_usd": 100.6,
+  "holdout_mdape_pct": 21.54,
+  "calibrated_coverage_pct": 79.7,
+  "fair_range_low_mult": 0.6693,
+  "fair_range_high_mult": 1.5726,
+  "data_funnel": {
+    "cleaned_rows": 21515,
+    "unique_hosts": 10589,
+    "host_overlap_pct": 0.0
+  },
+  "residual_hist": {
+    "mean": 0.0137,
+    "counts": [
+      1,
+      2,
+      5,
+      33,
+      158,
+      876,
+      1733,
+      1188,
+      403,
+      133,
+      49,
+      28,
+      13,
+      10,
+      2,
+      2,
+      3,
+      2
+    ],
+    "edges": [
+      -2.02,
+      -1.724,
+      -1.427,
+      -1.13,
+      -0.833,
+      -0.537,
+      -0.24,
+      0.057,
+      0.354,
+      0.651,
+      0.947,
+      1.244,
+      1.541,
+      1.838,
+      2.134,
+      2.431,
+      2.728,
+      3.025,
+      3.321
+    ]
+  },
+  "feature_importances": [
+    {
+      "feature": "minimum_nights",
+      "pct": 44.87
+    },
+    {
+      "feature": "dist_midtown_km",
+      "pct": 15.0
+    },
+    {
+      "feature": "accommodates",
+      "pct": 14.85
+    },
+    {
+      "feature": "cal_avail_rate",
+      "pct": 5.96
+    },
+    {
+      "feature": "longitude",
+      "pct": 5.87
+    },
+    {
+      "feature": "room_type",
+      "pct": 3.64
+    },
+    {
+      "feature": "bathrooms_clean",
+      "pct": 3.46
+    },
+    {
+      "feature": "bedrooms",
+      "pct": 2.87
+    },
+    {
+      "feature": "review_scores_rating",
+      "pct": 1.8
+    },
+    {
+      "feature": "property_type_clean",
+      "pct": 1.66
+    }
+  ],
+  "benchmark_models": [
+    {
+      "Model": "CatBoost",
+      "CV MAE Mean ($)": 101.49,
+      "CV MAE Std ($)": 20.94,
+      "CV RMSE Mean ($)": 383.26,
+      "CV RMSE Std ($)": 143.78,
+      "CV R2 Mean": 0.3452
+    },
+    {
+      "Model": "XGBoost",
+      "CV MAE Mean ($)": 101.82,
+      "CV MAE Std ($)": 19.43,
+      "CV RMSE Mean ($)": 385.28,
+      "CV RMSE Std ($)": 139.49,
+      "CV R2 Mean": 0.3352
+    },
+    {
+      "Model": "Gradient Boosting",
+      "CV MAE Mean ($)": 107.04,
+      "CV MAE Std ($)": 21.4,
+      "CV RMSE Mean ($)": 394.24,
+      "CV RMSE Std ($)": 142.43,
+      "CV R2 Mean": 0.3038
+    },
+    {
+      "Model": "Random Forest",
+      "CV MAE Mean ($)": 107.76,
+      "CV MAE Std ($)": 19.91,
+      "CV RMSE Mean ($)": 396.41,
+      "CV RMSE Std ($)": 141.73,
+      "CV R2 Mean": 0.2949
+    },
+    {
+      "Model": "Ridge",
+      "CV MAE Mean ($)": 121.99,
+      "CV MAE Std ($)": 21.17,
+      "CV RMSE Mean ($)": 408.37,
+      "CV RMSE Std ($)": 138.05,
+      "CV R2 Mean": 0.2461
+    },
+    {
+      "Model": "Linear Regression",
+      "CV MAE Mean ($)": 121.99,
+      "CV MAE Std ($)": 21.26,
+      "CV RMSE Mean ($)": 408.31,
+      "CV RMSE Std ($)": 138.1,
+      "CV R2 Mean": 0.2463
+    },
+    {
+      "Model": "Decision Tree",
+      "CV MAE Mean ($)": 122.26,
+      "CV MAE Std ($)": 18.9,
+      "CV RMSE Mean ($)": 412.98,
+      "CV RMSE Std ($)": 136.96,
+      "CV R2 Mean": 0.2262
+    },
+    {
+      "Model": "Elastic Net",
+      "CV MAE Mean ($)": 125.13,
+      "CV MAE Std ($)": 20.8,
+      "CV RMSE Mean ($)": 414.3,
+      "CV RMSE Std ($)": 136.25,
+      "CV R2 Mean": 0.2214
+    },
+    {
+      "Model": "Median Baseline",
+      "CV MAE Mean ($)": 177.31,
+      "CV MAE Std ($)": 22.46,
+      "CV RMSE Mean ($)": 476.3,
+      "CV RMSE Std ($)": 130.82,
+      "CV R2 Mean": -0.0553
+    }
+  ]
+}

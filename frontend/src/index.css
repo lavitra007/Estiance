@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #F5F2EC;
+    color: #141413;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+.font-serif-display {
+  font-family: 'Instrument Serif', Georgia, serif;
+}
+
+.font-mono-label {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom Range Slider */
+input[type="range"].estiance-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 999px;
+  background: #E8E3D9;
+  outline: none;
+}
+
+input[type="range"].estiance-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #D96B38;
+  border: 2.5px solid #FFFFFF;
+  box-shadow: 0 1px 4px rgba(20, 20, 19, 0.28);
+  cursor: pointer;
+}
+
+input[type="range"].estiance-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #D96B38;
+  border: 2.5px solid #FFFFFF;
+  box-shadow: 0 1px 4px rgba(20, 20, 19, 0.28);
+  cursor: pointer;
+}
+
+@keyframes estiance-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.estiance-shimmer {
+  background: linear-gradient(90deg, #EFECE5 25%, #FAF8F4 50%, #EFECE5 75%);
+  background-size: 200% 100%;
+  animation: estiance-shimmer 1.3s ease-in-out infinite;
+}
+
+@keyframes estiance-orbit {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.estiance-orbit-spin {
+  animation: estiance-orbit 1.15s linear infinite;
+}
